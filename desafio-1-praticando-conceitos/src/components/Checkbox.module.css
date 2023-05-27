@@ -1,0 +1,39 @@
+.checkTaskButton {
+    appearance: none;
+    min-width: 1.125rem;
+    height: 1.125rem;
+    background-color: transparent;
+    border: 2px solid var(--blue-500);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 0.25rem;
+    outline: 0;
+    box-shadow: none;
+}
+
+.checkTaskButton:hover {
+    background-color: rgba(94, 96, 206, 0.2);
+}
+
+.checkTaskButton:checked {
+    background: var(--purple-500);
+    border-color: var(--purple-500);
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.checkTaskButton:checked:hover {
+    background: var(--purple-300);
+    border-color: var(--purple-300);
+}
+
+.checkTaskButton:checked::after {
+    content: "\2143";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--gray-100);
+    transform: scale(0.75) rotate(45deg);
+    top: -3.7px;
+}

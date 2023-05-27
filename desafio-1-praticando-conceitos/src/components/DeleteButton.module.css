@@ -1,0 +1,18 @@
+.deleteTaskButton {
+    align-self: flex-start;
+    background: transparent;
+    padding: 0.25rem;
+    color: var(--gray-300);
+    border: 0;
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 4px;
+    transition: color 0.2s, background-color 0.2s;
+    outline: 0;
+    box-shadow: none;
+}
+
+.deleteTaskButton:hover {
+    background: var(--gray-400);
+    color: var(--red-500);
+}

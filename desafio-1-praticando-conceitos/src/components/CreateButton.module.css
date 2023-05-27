@@ -1,0 +1,28 @@
+.createTaskButton {
+    background: var(--blue-500);
+    color: var(--gray-100);
+    border: 0;
+    border-radius: 8px;
+    padding: 1rem;
+    line-height: 1.4;
+    font-weight: 700;
+    font-size: 0.875rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 3.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    outline: 0;
+    box-shadow: none;
+}
+
+.createTaskButton:not(:disabled):hover {
+    background: var(--blue-300);
+}
+
+.createTaskButton:disabled {
+    opacity: 0.9;
+    cursor: not-allowed;
+}
